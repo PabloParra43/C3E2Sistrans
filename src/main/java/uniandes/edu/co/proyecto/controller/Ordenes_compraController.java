@@ -74,6 +74,7 @@ public class Ordenes_compraController {
      * @param id Identificador de la orden de compra a actualizar.
      * @return ResponseEntity<Map<String,Object>> resultado de la transacción.
      */
+    @CrossOrigin(origins = "null")
     @PostMapping("/ordenes_compra/{id}/anular")
     public ResponseEntity<Map<String,Object>> orden_compraEditarGuardar(@PathVariable("id") Integer id) {
         try {
